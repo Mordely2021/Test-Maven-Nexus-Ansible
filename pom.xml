@@ -7,6 +7,17 @@
     <artifactId>gs-spring-boot</artifactId>
     <version>0.1.1</version>
     
+    <distributionManagement>
+    <snapshotRepository>
+      <id>nexus-snapshots</id>
+      <url>http://107.21.73.148:8081/repository/maven-snapshots/</url>
+    </snapshotRepository>
+    <repository>
+      <id>nexus-release</id>
+      <url>http://107.21.73.148:8081/repository/maven-releases/</url>
+    </repository>
+    </distributionManagement>
+
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -35,3 +46,4 @@
     </build>
 
 </project>
+
